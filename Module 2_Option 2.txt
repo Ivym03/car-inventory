@@ -1,0 +1,107 @@
+﻿Option 2: Creating a Python Application 
+
+
+Initial Python Prompt:
+
+
+# Initialize an empty dictionary to store car information
+car_info = {}
+
+
+# Prompt the user for input
+car_info['brand'] = input("Enter car brand: ")
+car_info['model'] = input("Enter car model: ")
+
+
+# Prompt for the year as an integer
+while True:
+    try:
+        car_info['year'] = int(input("Enter car year: "))
+        break
+    except ValueError:
+        print("Invalid input. Please enter a valid year (e.g., 2022):")
+
+
+# Prompt for starting and ending odometer readings as integers
+while True:
+    try:
+        car_info['starting_odometer'] = int(input("Enter starting odometer reading: "))
+        break
+    except ValueError:
+        print("Invalid input. Please enter a valid integer for odometer reading.")
+
+
+while True:
+    try:
+        car_info['ending_odometer'] = int(input("Enter ending odometer reading: "))
+        break
+    except ValueError:
+        print("Invalid input. Please enter a valid integer for odometer reading.")
+
+
+# Prompt for estimated miles per gallon as a float
+while True:
+    try:
+        car_info['mpg'] = float(input("Enter estimated miles per gallon (e.g., 25.5): "))
+        break
+    except ValueError:
+        print("Invalid input. Please enter a valid number for miles per gallon.")
+
+
+# Print the contents of the car_info dictionary
+print("\nCar Information:")
+for key, value in car_info.items():
+    print(f"{key.capitalize()}: {value}")
+Example using a 2018 Honda Civic, estimated 26.0 mpg, with a starting odometer of 152 and an ending odometer of 3456:
+
+
+# Initialize a dictionary with the provided car information
+car_info = {
+    'brand': 'Honda',
+    'model': 'Civic',
+    'year': 2018,
+    'starting_odometer': 152,
+    'ending_odometer': 3456,
+    'mpg': 26.0
+}
+
+
+# Print the contents of the car_info dictionary
+print("Car Information:")
+for key, value in car_info.items():
+    print(f"{key.capitalize()}: {value}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Screenshot of program running:
