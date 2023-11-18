@@ -1,9 +1,3 @@
-﻿Option 2: Creating a Python Application 
-
-
-Initial Python Prompt:
-
-
 # Initialize an empty dictionary to store car information
 car_info = {}
 
@@ -70,38 +64,3 @@ car_info = {
 print("Car Information:")
 for key, value in car_info.items():
     print(f"{key.capitalize()}: {value}")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Screenshot of program running:
